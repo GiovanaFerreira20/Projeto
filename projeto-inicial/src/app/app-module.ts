@@ -8,19 +8,21 @@ import { ContadorModule } from './contador/contador-module';
 import { EstruturaModule } from './estrutura/estrutura-module';
 import { Diretiva } from './estrutura/diretiva/diretiva';
 import { Estoque } from './produtos/estoque/estoque';
+import { SharedModule } from './shared/shared-module';
+
 
 @NgModule({
   declarations: [
     App,
     Soma,
     Estoque
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ContadorModule,
-    EstruturaModule
+    EstruturaModule,
+    SharedModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
