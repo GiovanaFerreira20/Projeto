@@ -1,11 +1,12 @@
-<nav>
-    <a routerLink="/contador">Contador</a><br>
-    <a routerLink="/alunos">Lista de Alunos</a>    
-</nav>
-
+<app-inicial></app-inicial>
 <app-estoque></app-estoque><br>
-
 <app-botao></app-botao>
 
-<router-outlet />
+<nav>
+  <ul>
+    <li><a routerLink="/soma" routerLinkActive="active">Soma</a></li>
+    <li><a routerLink="/diretiva" routerLinkActive="active">Diretiva</a></li>
+  </ul>
+</nav>
 
+<router-outlet></router-outlet>

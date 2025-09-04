@@ -6,24 +6,28 @@ import { App } from './app';
 import { Soma } from './contador/soma/soma';
 import { ContadorModule } from './contador/contador-module';
 import { EstruturaModule } from './estrutura/estrutura-module';
-import { Diretiva } from './estrutura/diretiva/diretiva';
 import { Estoque } from './produtos/estoque/estoque';
 import { SharedModule } from './shared/shared-module';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { Inicial } from './cadastrar/inicial/inicial';
+
 
 
 @NgModule({
   declarations: [
     App,
     Soma,
-    Estoque
+    Estoque,
+    Inicial
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ContadorModule,
     EstruturaModule,
-    SharedModule
-  ],
+    SharedModule,
+    MatToolbarModule
+],
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection()
