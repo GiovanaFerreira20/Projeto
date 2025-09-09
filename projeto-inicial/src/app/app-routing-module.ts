@@ -4,6 +4,7 @@ import { Soma } from './contador/soma/soma';
 import { Diretiva } from './estrutura/diretiva/diretiva';
 import { Estoque } from './produtos/estoque/estoque';
 import { Inicial } from './cadastrar/inicial/inicial';
+import {Tabela} from './dados/tabela/tabela';
 
 const routes: Routes = [
  
@@ -23,6 +24,11 @@ const routes: Routes = [
   {
     path:'inicial',
     component: Inicial
+  },
+
+  {
+    path: 'tabela',
+    component: Tabela
   }
 
 ];

@@ -10,8 +10,8 @@ import { Estoque } from './produtos/estoque/estoque';
 import { SharedModule } from './shared/shared-module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Inicial } from './cadastrar/inicial/inicial';
-
-
+import {MatTableModule} from '@angular/material/table';
+import { DadosModule } from './dados/dados-module';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,9 @@ import { Inicial } from './cadastrar/inicial/inicial';
     ContadorModule,
     EstruturaModule,
     SharedModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTableModule,
+    DadosModule
 ],
   providers: [
     provideBrowserGlobalErrorListeners(),
